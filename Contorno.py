@@ -28,13 +28,14 @@ image = ax.imshow(Z, extent=[x.min(), x.max(), y.min(), y.max()], origin='lower'
 cbar = plt.colorbar(image)
 
 # Etiquetas de los ejes
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
+ax.set_xlabel('x')
+ax.set_ylabel('y')
 
 ax.set_aspect('auto')
 
 # Título del gráfico
-ax.set_title('Gráfico de f(X, Y) en el plano XY')
+title= '\u03A6'+r"(x,y) = $\frac{2V}{\pi} \sum_{n=1}^{4000} \frac{(-1)^{n}}{n} \sin{(\frac{n \pi x}{L})} e^{\frac{-n \pi y}{L}} + \frac{Vx}{L}$"+"             L=10 || V=5"
+ax.set_title(title, loc='center', y=1.05)
 
 # Mostrar el gráfico
 plt.show()

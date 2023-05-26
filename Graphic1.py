@@ -31,7 +31,10 @@ ax.set_ylabel('y')
 ax.set_zlabel('\u03A6 (x,y)')
 
 # Título del gráfico
-ax.set_title("\u03A6 (x,y) = ")
+title= '\u03A6'+r"(x,y) = $\frac{2V}{\pi} \sum_{n=1}^{4000} \frac{(-1)^{n}}{n} \sin{(\frac{n \pi x}{L})} e^{\frac{-n \pi y}{L}} + \frac{Vx}{L}$"+"\n L=10 \n V=5"
+ax.set_title(title, loc='center', y=1)
+
+
 
 
 # Mostrar el gráfico
